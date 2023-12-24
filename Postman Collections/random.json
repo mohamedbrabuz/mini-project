@@ -45,7 +45,12 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Mohamed Belabbes\",\r\n  \"recruitment_date\": \"2023-01-01\"\r\n}"
+					"raw": "{\r\n  \"name\": \"Mohamed Belabbes\",\r\n  \"recruitment_date\": \"2023-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": "http://localhost:8080/api/employee"
 			},
