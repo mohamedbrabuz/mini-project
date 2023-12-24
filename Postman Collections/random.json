@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "e91f0e92-3af0-4694-8d7e-4cdb465f9bdc",
+		"name": "mini-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllEmployees",
+			"id": "a261b106-59d3-4dce-83d9-8c3970f1adf8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/api/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "createEmployee",
+			"id": "1f03a881-f956-4af8-b63d-0922021e7e3a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Mohamed Belabbes\",\r\n  \"recruitment_date\": \"2023-01-01\"\r\n}"
+				},
+				"url": "http://localhost:8080/api/employee"
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeByID",
+			"id": "3c621263-211b-402b-a09b-eaf9172e28f0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/employee/1"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"id": "916be85b-5489-43ed-bc11-08a504567ea1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/employee/1"
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"id": "9d86c4f5-e3a6-4e34-ae5f-92bb6f069dce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Mohamed Belabbes Tayeb\",\r\n  \"recruitment_date\": \"2023-01-01\"\r\n}"
+				},
+				"url": "http://localhost:8080/api/employee/1"
+			},
+			"response": []
+		}
+	]
+}
